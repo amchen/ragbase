@@ -19,10 +19,30 @@ git clone git@github.com:curiousily/ragbase.git
 cd ragbase
 ```
 
-Install the dependencies (requires Poetry):
+Install the Python development headers for your python version:
+
+```sh
+sudo apt-get install python3.12-dev
+```
+
+Install or update the dependencies (requires Poetry):
 
 ```sh
 poetry install
+```
+or
+```sh
+poetry update
+```
+
+Install/restart ollama:
+
+```sh
+sudo snap install ollama
+```
+or
+```sh
+sudo snap restart ollama
 ```
 
 Fetch your LLM (gemma2:9b by default):
@@ -70,6 +90,7 @@ Combines the LLM with the retriever to answer a given user question
 - [FlashRank](https://github.com/PrithivirajDamodaran/FlashRank) - fast reranking
 - [FastEmbed](https://qdrant.github.io/fastembed/) - lightweight and fast embedding generation
 - [Streamlit](https://streamlit.io/) - build UI for data apps
+- [PDFium](https://pdfium.googlesource.com/pdfium/) - PDF processing and text extraction
 - [PDFium](https://pdfium.googlesource.com/pdfium/) - PDF processing and text extraction
 
 ## Add Groq API Key (Optional)

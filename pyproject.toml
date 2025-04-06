@@ -1,23 +1,24 @@
 [tool.poetry]
 name = "ragbase"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
-authors = ["Venelin Valkov <venelin@curiousily.com>"]
+authors = ["Venelin Valkov <venelin@curiousily.com>", "Andrew Chen <amchen@yahoo.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.12,<3.13"
-langchain-community = "^0.2.6"
+langchain-community = "^0.3.0"
 flashrank = "^0.2.8"
 qdrant-client = "^1.10.1"
 pypdfium2 = "^4.30.0"
+pymupdf = "^1.25.5"
 fastembed = "^0.3.3"
-langchain-experimental = "^0.0.62"
-langchain-qdrant = "^0.1.1"
+langchain-experimental = "^0.3.0"
+langchain-qdrant = "^0.1.4"
 streamlit = "^1.36.0"
 python-dotenv = "^1.0.1"
-langchain-groq = "^0.1.6"
+langchain-groq = "^0.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
